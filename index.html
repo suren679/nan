@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="auto" content='spider'>
+	<meta charset="UTF-8">
+	<title>中国风景</title>
+	<link rel="stylesheet" type="text/css" href="scenery.css">
+	<link rel="stylesheet" type="text/css" href="base.css">
+</head>
+<body>
+<!--body,nav,section需要标题大纲，一般nav是用来存放一组导航链接的,section一般不用来定义样式所以，header里用div.每个页面只有一个h1方便搜索引擎搜索-->
+	<header id='header'>
+		<div class='center'>
+			<h1 class="logo">俗人旅游</h1>
+			<nav style='overflow:hidden;'>
+				<!--为了大纲清晰，所以要加个标题-->
+				<h2 class="none">网站导航</h2>
+			<ul class="link">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="infor.html" >旅游咨询</a></li>
+					<li><a href="buy.html">机票订购</a></li>
+					<li><a href="scenery.html">风景欣赏</a></li>
+					<li><a href="about.html">个人介绍</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="search">
+		<div id="mask"></div>
+	<!--搜索框-->
+		<div class="center">
+			<!--如果搜索框放在这里会透明-->
+		</div>
+		<input class="search" id="inp" type="text" placeholder='请输入城市或景点'/>
+		<button class="button">搜索</button>
+		<!--鼠标滑过 遮罩层变色-->
+		<script type="text/javascript">
+			/*搜索框*/
+			var search=document.getElementById('inp');
+			var mask=document.getElementById('mask');
+			search.onfocus=opacity;
+			search.onblur=stop;
+			function opacity(){
+				mask.style.backgroundColor='rgba(0,0,0,.4)';
+			}
+			function stop(){
+				mask.style.backgroundColor='rgba(0,0,0,0)';
+			}
+		</script>
+	</div>
+
+
+	<div id="tour">
+		<section class='center'>
+			<h2>热门旅游</h2>
+			<p>国内旅游、国外旅游、自助旅游、自驾旅游、游轮签证、主题旅游等各种热门最新旅游推荐</p>
+		</section>
+		<figure>
+			<a href="#"><img src="img\北京(1)(1).png" alt='北京'></a>
+			<figcaption><strong class='title'>&lt;北京欢快3日游&gt;</strong>可享受北京的城市文化，参观长城、故宫、天安门。品尝北京烤鸭和其他美食</figcaption>
+			<div>
+			<span class='price'>¥ <strong>5647</strong> 起</span>
+			<em class='sat'>满意度91.6%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\上海(1)(1).png" alt='上海'></a>
+			<figcaption><strong class='title'>&lt;上海欢快3日游&gt;</strong>可参观东方明珠、外滩等著名景点。品尝上海小吃；体验繁华的购物和夜生活。</figcaption>
+			<div>
+			<span class='price'>¥ <strong>4888</strong> 起</span>
+			<em class='sat'>满意度90%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\澳门(1)(1).jpg" alt='澳门'></a>
+			<figcaption><strong class='title'>&lt;澳门豪赌3日游&gt;</strong>可参观澳门塔、威尼斯，也可去感受澳门的赌场，品尝当地美食和享受现代化的娱乐活动</figcaption>
+			<div>
+			<span class='price'>¥ <strong>10000</strong> 起</span>
+			<em class='sat'>满意度90%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\大理(1)(1).jpg" alt='大理'></a>
+			<figcaption><strong class='title'>&lt;大理愉快3日游&gt;</strong>可参观洱海、苍山等著名景点，感受大理的自然风景同时品尝当地美食和手工艺品，了解大理的独特魅力</figcaption>
+			<div>
+			<span class='price'>¥ <strong>4003</strong> 起</span>
+			<em class='sat'>满意度95%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\拉萨(1)(1).png" alt='拉萨'></a>
+			<figcaption><strong class='title'>&lt;拉萨欢快7日游&gt;</strong>可参观布达拉宫、大昭寺等著名景点，也可感受拉萨的历史和文化底蕴。同时体验藏族的民俗风情，品尝当代美食和手工艺品，了解拉萨的独特魅力</figcaption>
+			<div>
+			<span class='price'>¥ <strong>6000</strong> 起</span>
+			<em class='sat'>满意度88%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\西安(1)(1).png" alt='西安'></a>
+			<figcaption><strong class='title'>&lt;西安欢快4日游&gt;</strong>可参观兵马俑、大雁塔等著名景点，可感受古代文明重要发源地之一的历史文化。同时品尝当地美食，前往钟楼等商业区购买纪念品</figcaption>
+			<div>
+			<span class='price'>¥ <strong>6010</strong> 起</span>
+			<em class='sat'>满意度91%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\南京(1)(1).png" alt='南京'></a>
+			<figcaption><strong class='title'>&lt;南京深感3日游&gt;</strong>可参观中山陵、夫子庙等著名景点，回望当年南京大屠杀的历史文化，铭记历史。同时品尝南京美食，购买当代特殊商品和纪念品</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2978</strong> 起</span>
+			<em class='sat'>满意度88%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\澳门(1)(1).jpg" alt='厦门'></a>
+			<figcaption><strong class='title'>&lt;厦门欢快3日游&gt;</strong>可参观鼓浪屿、厦门大学等著名景点，感受厦门的自然美景和历史文化。品尝当地美食和手工艺品，了解厦门的独特魅力，是旅游首选胜地</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2000</strong> 起</span>
+			<em class='sat'>满意度90%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+		<figure>
+			<a href="#"><img src="img\苏州(1)(1).png" alt='苏州'></a>
+			<figcaption><strong class='title'>&lt;苏州欢快3日游&gt;</strong>可参观政园、虎丘等著名景点感受苏州的历史和文化底蕴。同时品尝苏州美食，了解苏州的美食文化，购买当代特色商品和纪念品</figcaption>
+			<div>
+			<span class='price'>¥ <strong>2688</strong> 起</span>
+			<em class='sat'>满意度85%</em>
+			</div>
+			<div class="type">
+				国内长线
+			</div>
+		</figure>
+
+	<!--暂不使用
+	</div>
+		<footer id='foot'>
+			<div class="top">
+				<div class="block left ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>途牛旅游网</li>
+						<li>驴妈妈旅游网</li>
+						<li>携程旅游</li>
+						<li>中国青年旅行社</li>
+					</ul>
+				</div>
+				<div class="block center ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>途牛旅游网</li>
+						<li>驴妈妈旅游网</li>
+						<li>携程旅游</li>
+						<li>中国青年旅行社</li>
+					</ul>
+				</div>
+				<div class="block right ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>途牛旅游网</li>
+						<li>驴妈妈旅游网</li>
+						<li>携程旅游</li>
+						<li>中国青年旅行社</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				蜘蛛旅行社 | www.zz.com | 旅行经营许可证
+			</div>
+		</footer>
+	    -->
+</body>
+</html>
